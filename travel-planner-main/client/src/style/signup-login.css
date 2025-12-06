@@ -1,0 +1,140 @@
+/* 🌟 Form Container */
+.form-signup-login {
+  max-width: 420px;
+  padding: 3.5rem;
+  margin-top: 50px;
+  margin: 8rem auto 6rem; /* Added more breathing space */
+  background: linear-gradient(135deg, #ffffff, #f8f6ff);
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+/* 🩵 Subtle hover lift for the entire form */
+.form-signup-login:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 45px rgba(108, 99, 255, 0.2);
+}
+
+/* ✨ Floating Label Container */
+.form-signup-login .form-floating {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+/* 🖊 Input Fields */
+.form-signup-login input[type="text"],
+.form-signup-login input[type="email"],
+.form-signup-login input[type="password"] {
+  width: 100%;
+  padding: 1.1rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fafafa;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.form-signup-login input:focus {
+  border-color: #8b7bff;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(139, 123, 255, 0.25);
+  outline: none;
+}
+
+/* 🪄 Labels */
+.form-signup-login label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s ease;
+  background: transparent;
+}
+
+.form-signup-login input:focus + label,
+.form-signup-login input:not(:placeholder-shown) + label {
+  top: -0.7rem;
+  left: 0.9rem;
+  font-size: 0.85rem;
+  color: #6c63ff;
+  background: #ffffff;
+  padding: 0 0.4rem;
+  border-radius: 4px;
+}
+
+/* ✅ Validation Feedback */
+.form-signup-login .is-valid {
+  border-color: #28a745 !important;
+}
+.form-signup-login .is-invalid {
+  border-color: #dc3545 !important;
+}
+.form-signup-login .invalid-feedback {
+  font-size: 0.9rem;
+  color: #dc3545;
+  margin-top: 0.35rem;
+}
+
+/* 💜 Submit Button */
+.form-signup-login button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, #6c63ff, #a18aff, #c7b8ff);
+  background-size: 200%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.form-signup-login button:hover {
+  background-position: right;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(108, 99, 255, 0.3);
+}
+
+/* 🚨 Error Message Box */
+.form-signup-login .bg-danger {
+  border-radius: 10px;
+  padding: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #fff;
+  background: linear-gradient(90deg, #ff6b6b, #ff8787);
+}
+
+/* 💚 Success Message */
+.form-signup-login p {
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #28a745;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .form-signup-login {
+    padding: 2rem 1.5rem;
+    margin: 2rem 1rem 5rem;
+  }
+
+  .form-signup-login input {
+    font-size: 1rem;
+  }
+
+  .form-signup-login button {
+    font-size: 1rem;
+  }
+}
